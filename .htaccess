@@ -1,0 +1,23 @@
+#Mở chức năng rewrite
+RewriteEngine ON
+#Đinnhj nghĩ lại thư mục gốc
+RewriteBase /
+#Bắt đầu viết lại đường dẫn
+RewriteRule ^(.*)-([0-9]*)-([0-9]*).html$ detail-product.php?id=$2&cid=$3
+RewriteRule ^lien-he$ contact.php
+RewriteRule ^dang-nhap$ login.php
+RewriteRule ^tai-khoan$ account.php
+RewriteRule ^thanh-toan$ pay.php
+RewriteRule ^tin-tuc$ news.php
+RewriteRule ^(.*)-([0-9]*).html$ detail_news.php?nid=$2
+
+# RewriteRule ^(.*)(.*)-([0-9]*)(.*)-([0-9]*)$ category.php?orderby=$4&cat_id=$5
+# RewriteRule ^(.*)(.*)-([0-9]*)(.*)-([0-9]*)$ category.php?orderby=$4&cat_id=$5
+RewriteRule ^(.*)(.*)-([0-9]*)$ category.php?cat_id=$3
+RewriteRule ^(.*)/page-([0-9]*)$ category.php?page=$2
+RewriteRule ^cua-hang$ category.php
+
+
+# RewriteRule ^(.*)-([0-9]*)$ cat.php?id=$2
+# RewriteRule ^(.*)-([0-9]*)-([0-9]*).html$ detail.php?id=$2&cid=$3
+# RewriteRule ^(.*)-([0-9]*).html$ detail.php?id=$2
