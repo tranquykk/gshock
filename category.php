@@ -1,22 +1,16 @@
 <?php include_once 'templates/gshock/inc/header.php'; ?>
 <?php
+    if(!empty($_GET['cat_id'])) {
+        $cid = $_GET['cat_id'];
+    }
 
     if(!empty($_GET['name'])) {
         $product_name = $_GET['name'];
     }
 
-    if(!empty($_GET['cat_id'])) {
-        $cid = $_GET['cat_id'];
-        $queryTSD = "SELECT count(*) AS TSD FROM products WHERE categories_id = $cid";
-    } else {
-        $queryTSD = "SELECT count(*) AS TSD FROM products";
-    }
-
-    $ketquaTSD = $mysqli->query($queryTSD);
-    $arrTSD = mysqli_fetch_assoc($ketquaTSD);
     //tính tổng số dòng
-    $tongSoDong = $arrTSD['TSD'];
-    // $tongSoDong = LibraryPage::pageing('products');
+    $tongSoDong = LibraryPage::pageing('products');
+    //số truyện trên 1 trang
     $row_count = 12;
     //tổng số trang
     $tongSoTrang = ceil($tongSoDong / $row_count);
@@ -294,7 +288,7 @@
 		<div id="quick-view" class="view-productt wc-quick-view-modal woocommerce single-product wc-quick-view-product with-product-image with-product-details modal" data-image-width="600" style="display: inline-block;">
 			
 		</div>
-		<a href="javascript:void(0)" data-dismiss="modal" style="position: absolute; top: 8px; right: 150px; display: block; width: 30px;height: 30px;text-indent: -9999px;background-size: contain;background-repeat: no-repeat; background-position: center center;background-image: url(http://gshockvn.vne/templates/gshock/img/111.png); z-index: 100">Close</a>
+		<a href="javascript:void(0)" data-dismiss="modal" style="position: absolute; top: 8px; right: 150px; display: block; width: 30px;height: 30px;text-indent: -9999px;background-size: contain;background-repeat: no-repeat; background-position: center center;background-image: url(templates/gshock/img/111.png); z-index: 100">Close</a>
 	</div>
 
 

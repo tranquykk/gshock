@@ -25,8 +25,8 @@
                         while($arPicture = mysqli_fetch_assoc($ketqua)) {
                             $picture = $arPicture['picture'];
                     ?>
-                    <div data-thumb="http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?>" class="woocommerce-product-gallery__image" style="width: 500px;  margin-right: 0px; float: left; display: block;">
-						<img width="600" height="600" src="http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?>" class="wp-post-image" alt="" decoding="async" loading="lazy" title="Dong-Ho-GST-S110-1ADR.jpg" data-caption="" data-src="http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?>" data-large_image="http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?>" data-large_image_width="1080" data-large_image_height="1080" srcset="http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?> 600w, http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?> 768w, http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?> 999w, http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?> 300w, http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?> 100w, http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?> 64w, http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?> 1080w" sizes="(max-width: 600px) 100vw, 600px" data-xoowscfly="fly" draggable="false">
+                    <div data-thumb="templates/gshock/img/<?php echo $picture ?>" class="woocommerce-product-gallery__image" style="width: 500px;  margin-right: 0px; float: left; display: block;">
+						<img width="600" height="600" src="templates/gshock/img/<?php echo $picture ?>" class="wp-post-image" alt="" decoding="async" loading="lazy" title="Dong-Ho-GST-S110-1ADR.jpg" data-caption="" data-src="templates/gshock/img/<?php echo $picture ?>" data-large_image="templates/gshock/img/<?php echo $picture ?>" data-large_image_width="1080" data-large_image_height="1080" srcset="templates/gshock/img/<?php echo $picture ?> 600w, templates/gshock/img/<?php echo $picture ?> 768w, templates/gshock/img/<?php echo $picture ?> 999w, templates/gshock/img/<?php echo $picture ?> 300w, templates/gshock/img/<?php echo $picture ?> 100w, templates/gshock/img/<?php echo $picture ?> 64w, templates/gshock/img/<?php echo $picture ?> 1080w" sizes="(max-width: 600px) 100vw, 600px" data-xoowscfly="fly" draggable="false">
 					</div>
                     <?php
                         }
@@ -43,7 +43,7 @@
                         $curent += 1;
                 ?>
                 <li>
-                    <img onclick="currentSlide(<?php echo $curent;?>)" src="http://gshockvn.vne/templates/gshock/img/<?php echo $picture ?>" class="demo" draggable="false" width="100" height="100">
+                    <img onclick="currentSlide(<?php echo $curent;?>)" src="templates/gshock/img/<?php echo $picture ?>" class="demo" draggable="false" width="100" height="100">
                 </li>
                 <?php
                     }
@@ -118,7 +118,7 @@
 
 
 <script>
-// let slideIndex = 1;
+let slideIndex = 1;
 // showSlides(slideIndex);
 
 function plusSlides(n) {

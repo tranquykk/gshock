@@ -279,7 +279,7 @@
 											} else {
 												foreach($_SESSION['carts'] as $cart) {
 													$product_id = $cart['product_id'];
-													$quantity = $cart['quantity'];	
+													$quantity = $cart['quantity'];
 													$query4 = "INSERT INTO order_detail(order_id, product_id, quantity) VALUES ($oid, '$product_id', $quantity)";
 													$ketqua4 = $mysqli->query($query4);
 												}
@@ -301,7 +301,7 @@
 										}
 									}
 								?>
-									<input type="submit" name="pay" style="margin-bottom: 40px; padding: 10px 8px" class="checkout-button button alt wc-forward" value="Tiến hành đặt hàng">
+									<input type="submit" name="pay" style="margin-bottom: 40px; padding: 10px 8px" class="checkout-button button alt wc-forward" value="Tiến hành thanh toán">
 								
 							</div>
 						</div>

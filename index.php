@@ -651,7 +651,89 @@
 	
 	<div class="jquery-modal blocker hide" id="empModal" role="dialog">
 		<div id="quick-view" class="view-productt wc-quick-view-modal woocommerce single-product wc-quick-view-product with-product-image with-product-details modal" data-image-width="600" style="display: inline-block;">
-			
+			<!-- <div id="product" class="product type-product post status-publish first instock product_cat-g-shock product_cat-g-steel has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+				<div class="wc-quick-view-product-gallery woocommerce-product-gallery woocommerce-product-gallery--with-images images woocommerce-product-gallery--columns-6 woocommerce-product-gallery--control-nav-thumbs" data-columns="6" style="opacity: 1; transition: opacity 0.25s ease-in-out 0s; width: 600px;">
+					<div class="flex-viewport" style="overflow: hidden; position: relative; height: 100%;">
+						<figure class=" woocommerce-product-gallery__wrapper" style="width: 800%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+							<div data-thumb="https://gshockvn.net/wp-content/uploads/gst-s110-1adr_master-100x100.png" class="woocommerce-product-gallery__image flex-active-slide" data-thumb-alt="" style="width: 406.344px; margin-right: 0px; float: left; display: block;">
+								<img width="600" height="600" src="https://gshockvn.net/wp-content/uploads/gst-s110-1adr_master-600x600.png" class="wp-post-image" alt="" decoding="async" loading="lazy" title="gst-s110-1adr_master" data-caption="" data-src="https://gshockvn.net/wp-content/uploads/gst-s110-1adr_master.png" data-large_image="https://gshockvn.net/wp-content/uploads/gst-s110-1adr_master.png" data-large_image_width="800" data-large_image_height="800" srcset="https://gshockvn.net/wp-content/uploads/gst-s110-1adr_master-600x600.png 600w, https://gshockvn.net/wp-content/uploads/gst-s110-1adr_master-768x768.png 768w, https://gshockvn.net/wp-content/uploads/gst-s110-1adr_master-300x300.png 300w, https://gshockvn.net/wp-content/uploads/gst-s110-1adr_master-100x100.png 100w, https://gshockvn.net/wp-content/uploads/gst-s110-1adr_master-64x64.png 64w, https://gshockvn.net/wp-content/uploads/gst-s110-1adr_master.png 800w" sizes="(max-width: 600px) 100vw, 600px" data-xoowscfly="fly" draggable="false">
+							</div>
+							<div data-thumb="https://gshockvn.net/wp-content/uploads/dong-ho-g-shock-gst-s110-1adr-100x100.jpg" class="woocommerce-product-gallery__image" data-thumb-alt="" style="width: 406.344px; margin-right: 0px; float: left; display: block;">
+								<img width="600" height="600" src="https://gshockvn.net/wp-content/uploads/dong-ho-g-shock-gst-s110-1adr-600x600.jpg" class="wp-post-image" alt="" decoding="async" loading="lazy" title="Dong-Ho-G-Shock-GST-S110-1ADR.jpg" data-caption="" data-src="https://gshockvn.net/wp-content/uploads/dong-ho-g-shock-gst-s110-1adr.jpg" data-large_image="https://gshockvn.net/wp-content/uploads/dong-ho-g-shock-gst-s110-1adr.jpg" data-large_image_width="1080" data-large_image_height="1080" srcset="https://gshockvn.net/wp-content/uploads/dong-ho-g-shock-gst-s110-1adr-600x600.jpg 600w, https://gshockvn.net/wp-content/uploads/dong-ho-g-shock-gst-s110-1adr-768x768.jpg 768w, https://gshockvn.net/wp-content/uploads/dong-ho-g-shock-gst-s110-1adr-999x999.jpg 999w, https://gshockvn.net/wp-content/uploads/dong-ho-g-shock-gst-s110-1adr-300x300.jpg 300w, https://gshockvn.net/wp-content/uploads/dong-ho-g-shock-gst-s110-1adr-100x100.jpg 100w, https://gshockvn.net/wp-content/uploads/dong-ho-g-shock-gst-s110-1adr-64x64.jpg 64w, https://gshockvn.net/wp-content/uploads/dong-ho-g-shock-gst-s110-1adr.jpg 1080w" sizes="(max-width: 600px) 100vw, 600px" data-xoowscfly="fly" draggable="false">
+							</div>
+							<div data-thumb="https://gshockvn.net/wp-content/uploads/dong-ho-gst-s110-1adr-100x100.jpg" class="woocommerce-product-gallery__image" data-thumb-alt="" style="width: 406.344px; margin-right: 0px; float: left; display: block;">
+								<img width="600" height="600" src="https://gshockvn.net/wp-content/uploads/dong-ho-gst-s110-1adr-600x600.jpg" class="wp-post-image" alt="" decoding="async" loading="lazy" title="Dong-Ho-GST-S110-1ADR.jpg" data-caption="" data-src="https://gshockvn.net/wp-content/uploads/dong-ho-gst-s110-1adr.jpg" data-large_image="https://gshockvn.net/wp-content/uploads/dong-ho-gst-s110-1adr.jpg" data-large_image_width="1080" data-large_image_height="1080" srcset="https://gshockvn.net/wp-content/uploads/dong-ho-gst-s110-1adr-600x600.jpg 600w, https://gshockvn.net/wp-content/uploads/dong-ho-gst-s110-1adr-768x768.jpg 768w, https://gshockvn.net/wp-content/uploads/dong-ho-gst-s110-1adr-999x999.jpg 999w, https://gshockvn.net/wp-content/uploads/dong-ho-gst-s110-1adr-300x300.jpg 300w, https://gshockvn.net/wp-content/uploads/dong-ho-gst-s110-1adr-100x100.jpg 100w, https://gshockvn.net/wp-content/uploads/dong-ho-gst-s110-1adr-64x64.jpg 64w, https://gshockvn.net/wp-content/uploads/dong-ho-gst-s110-1adr.jpg 1080w" sizes="(max-width: 600px) 100vw, 600px" data-xoowscfly="fly" draggable="false">
+							</div>
+							<div data-thumb="https://gshockvn.net/wp-content/uploads/g-shock-gst-s110-1adr-100x100.jpg" class="woocommerce-product-gallery__image" data-thumb-alt="" style="width: 406.344px; margin-right: 0px; float: left; display: block;">
+								<img width="600" height="600" src="https://gshockvn.net/wp-content/uploads/g-shock-gst-s110-1adr-600x600.jpg" class="wp-post-image" alt="" decoding="async" loading="lazy" title="G-Shock-GST-S110-1ADR.jpg" data-caption="" data-src="https://gshockvn.net/wp-content/uploads/g-shock-gst-s110-1adr.jpg" data-large_image="https://gshockvn.net/wp-content/uploads/g-shock-gst-s110-1adr.jpg" data-large_image_width="960" data-large_image_height="960" srcset="https://gshockvn.net/wp-content/uploads/g-shock-gst-s110-1adr-600x600.jpg 600w, https://gshockvn.net/wp-content/uploads/g-shock-gst-s110-1adr-768x768.jpg 768w, https://gshockvn.net/wp-content/uploads/g-shock-gst-s110-1adr-300x300.jpg 300w, https://gshockvn.net/wp-content/uploads/g-shock-gst-s110-1adr-100x100.jpg 100w, https://gshockvn.net/wp-content/uploads/g-shock-gst-s110-1adr-64x64.jpg 64w, https://gshockvn.net/wp-content/uploads/g-shock-gst-s110-1adr.jpg 960w" sizes="(max-width: 600px) 100vw, 600px" data-xoowscfly="fly" draggable="false">
+							</div>
+						</figure>
+					</div>
+					<ol class="view-img-slide flex-control-nav flex-control-thumbs">
+						
+					</ol>
+				</div>
+				<div class="wc-quick-view-product-summary summary entry-summary">
+					<span class="vnt_onsale">-34%</span>
+					<h1 class="product_title entry-title">GST-S110-1ADR</h1>
+					<p class="price">
+						<del aria-hidden="true">
+							<span class="woocommerce-Price-amount amount">
+								<bdi>8.027.000
+									<span class="woocommerce-Price-currencySymbol">₫</span>
+								</bdi>
+							</span>
+						</del>
+						<ins>
+							<span class="woocommerce-Price-amount amount">
+								<bdi>5.299.000
+									<span class="woocommerce-Price-currencySymbol">₫</span>
+								</bdi>
+							</span>
+						</ins>
+					</p>
+					<div class="woocommerce-product-details__short-description">
+						<div class="woocommerce-product-details__short-description">
+							<div class="grid-1 grid--1 narrow-wrap">
+								<div class="narrow-layout">
+									<div class="narrow-contents">
+										<div class="header-grid grid-1 grid-n--1 bg-ultra-light-grey bg--white frame">
+											<div class="column bg-white">
+												<h2><b>Bộ sản phẩm gồm:</b></h2>
+												<ul class="infocomes">
+													<li>1 đồng hồ chính hãng.</li>
+													<li>Thẻ bảo hành 5 năm tất cả các lỗi do nhà sản xuất.</li>
+													<li>Thẻ thay pin miễn phí trọn đời.</li>
+													<li>1 vòng đeo tay G-SHOCK.</li>
+													<li>Thẻ giảm giá 200.000 ( cho lần mua tiếp theo).</li>
+													<li>1 hộp giấy + 1 hộp thiếc (tùy sản phẩm).</li>
+													<li>Miễn phí vận chuyển toàn quốc.</li>
+													<li>Sách hướng dẫn sử dụng các thứ tiếng.</li>
+													<li>Thông tin các đối tác bảo hành G-SHOCK &amp; BABY-G trên toàn cầu.</li>
+													<li>Hỗ trợ hướng dẫn sử dụng và tư vấn sản phẩm trọn đời.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form class="cart" action="https://gshockvn.net/san-pham/gst-s110-1adr/" method="post" enctype="multipart/form-data">
+						<div class="quantity">
+							<label class="screen-reader-text" for="quantity_6372fc7c52004">Số lượng</label>
+							<div class="dc_quantity_input">
+								<input class="minus" type="button" value="−">
+								<input type="number" id="quantity_6372fc7c52004" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="GST-S110-1ADR số lượng">
+								<input class="plus" type="button" value="+">
+							</div>
+						</div>
+						<button type="submit" name="add-to-cart" value="1849" class="single_add_to_cart_button button alt wp-element-button">Thêm vào giỏ hàng</button>
+					</form>
+
+					<div class="bk-btn" style="margin-top: 10px"></div>
+				</div>
+			</div> -->
 		</div>
 		<a href="javascript:void(0)" data-dismiss="modal" style="position: absolute; top: 8.5px; right: 150px; display: block; width: 30px;height: 30px;text-indent: -9999px;background-size: contain;background-repeat: no-repeat; background-position: center center;background-image: url(templates/gshock/img/111.png); z-index: 100">Close</a>
 	</div>

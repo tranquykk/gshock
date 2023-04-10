@@ -105,7 +105,7 @@
                   <div class="col-sm-6">
                   <div class="dataTables_info" id="dataTables-example_info" style="margin:27px 0 0 5px"><?php echo isset($_POST['search'])?"Kết quả tìm kiếm: $count":"Tổng số lượt đánh giá: $tongSoDong"?></div>
                   </div>
-                  <div class="col-sm-6" style="text-align:right;padding-left: 300px">
+                  <div class="col-sm-6" style="text-align:right;padding-left: 460px">
                     <div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
                       <ul class="pagination">
                         <?php
