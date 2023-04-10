@@ -3,7 +3,7 @@
     require_once 'util/DatabaseConnectUtil.php';
 
     $key = $_POST['districts_id'];
-    $sql = "SELECT * FROM wards WHERE districts_id = '$key'";
+    $sql = "SELECT * FROM wards WHERE district_id = '$key'";
     $ketqua = $mysqli2->query($sql);
     while($arWards = mysqli_fetch_assoc($ketqua)) {
         $wards_name = $arWards['name'];

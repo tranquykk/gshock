@@ -98,7 +98,7 @@
 														$ketqua = $mysqli2->query($sql);
 														while($arProvinces = mysqli_fetch_assoc($ketqua)) {
 															$provinces_name = $arProvinces['name'];
-															$provinces_id = $arProvinces['provinces_id'];
+															$provinces_id = $arProvinces['province_id'];
 													?>
 													<option value="<?php echo $provinces_id;?>"><?php echo $provinces_name;?></option>
 													<?php
@@ -233,6 +233,10 @@
 							<div class="wc-proceed-to-checkout">
 								<div class="bk-btn" style="margin-top: 10px"></div>
 								<?php
+									if(empty($_SESSION['carts'])) {
+										HEADER("LOCATION: /thanh-toan?success= Giỏ hàng rỗng! ");
+										die();
+									}
 									if(isset($_POST['pay'])) {
 										date_default_timezone_set('Asia/Ho_Chi_Minh');
                                         $order_date = date('Y/m/d H:i:s');
@@ -247,7 +251,7 @@
 											
 											if(!empty($_POST['provinces'])) {
 												$provinces_id = $_POST['provinces'];
-												$sql = "SELECT * FROM `provinces` WHERE provinces_id = '$provinces_id'";
+												$sql = "SELECT * FROM `provinces` WHERE province_id = '$province_id'";
 												$ketqua = $mysqli2->query($sql);
 												$arProvinces = mysqli_fetch_assoc($ketqua);
 												$provinces = $arProvinces['full_name'];
@@ -255,7 +259,7 @@
 
 											if(!empty($_POST['districts'])) {
 												$districts_id = $_POST['districts'];
-												$sql = "SELECT * FROM `districts` WHERE districts_id = '$districts_id'";
+												$sql = "SELECT * FROM `districts` WHERE district_id = '$districts_id'";
 												$ketqua = $mysqli2->query($sql);
 												$arDistricts = mysqli_fetch_assoc($ketqua);
 												$districts = $arDistricts['full_name'];
@@ -273,7 +277,7 @@
 											$arrOrder = mysqli_fetch_assoc($ketqua3);
 											$oid = $arrOrder['order_id'];
 
-											if(!isset($_SESSION['carts'])) {
+											if(empty($_SESSION['carts'])) {
 												$query4 = "INSERT INTO order_detail(order_id, product_id, quantity) VALUES ($oid, '$product_id', $quantity)";
 												$ketqua4 = $mysqli->query($query4);
 											} else {
